@@ -90,7 +90,7 @@ OSとしてGNU/Linuxを選択したのなら、
 先ずはGCCを使ってみると良いでしょう。
 
 OSとしてOSXを選択したのなら、
-XCodeを開発者サイトから入手してセットアップしてClangを使うと良いでしょう。
+XCodeをAppleの開発者サイトから入手してセットアップしてClangを使うと良いでしょう。
 
 OSとしてWindowsを選択してしまったのなら、Visual Studioを使うのが懸命でしょう。
 MinGWやCygwinを必要に迫られもしないのにWindowsで使うのは玄人か愚者かどちらかでしょう。
