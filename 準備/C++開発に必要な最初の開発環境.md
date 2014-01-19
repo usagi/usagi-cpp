@@ -90,17 +90,19 @@ OSとしてGNU/Linuxを選択したのなら、
 先ずはGCCを使ってみると良いでしょう。
 
 OSとしてOSXを選択したのなら、
-XCodeをAppleの開発者サイトから入手してセットアップしてClangを使うと良いでしょう。
+[XCode](https://developer.apple.com/xcode/)
+をAppleの開発者サイトから入手してセットアップしてClangを使うと良いでしょう。
 
 OSとしてWindowsを選択してしまったのなら、Visual Studioを使うのが懸命でしょう。
 MinGWやCygwinを必要に迫られもしないのにWindowsで使うのは玄人か愚者かどちらかでしょう。
 Visual Studioでは初歩的なサンプルコードをいちいちIDEでビルドしていては面倒ですが、
-コマンドラインツールもセットアップされますから、学習の初歩はそれを使えば良いでしょう。
+[コマンドラインツール](http://msdn.microsoft.com/ja-jp/library/ms235639.aspx)
+もセットアップされますから、学習の初歩はそれを使えば良いでしょう。
 
 GNU/Linuxの場合はセットアップしたデスクトップ環境に標準の端末エミュレーターを起動し、
-debian系（debian、Ubuntu、Mintなど）なら`apt install g++`、
-redhat系（Fedoraなど）なら`yum install gcc-c++`、
-OpenSUSEなら`zypper in g++`
+debian系（[debian](http://packages.debian.org/search?keywords=g%2B%2B)、[Ubuntu](http://packages.ubuntu.com/search?keywords=g%2B%2B)、Mintなど）なら`apt install g++`、
+redhat系（[Fedora](https://apps.fedoraproject.org/packages/s/g%252B%252B)など）なら`yum install gcc-c++`、
+[OpenSUSE](http://software.opensuse.org/package/gcc-c++)なら`zypper in gcc-c++`
 などなど、OS標準のパッケージマネージャーで"g++"をインストールすれば、
 必要なものは芋づる式に自動的にセットアップが済むでしょう。
 
