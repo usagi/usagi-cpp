@@ -70,18 +70,21 @@ C++の開発環境を整えるならば、OSの次に、コンパイラーを選
 
 コンパイラーと言っても、実際にはツールチェインやものによってはIDEのセットの事を広義的には言います。
 
-- GCC (GNU Compiler Collection)
+- [GCC][GCC] (GNU Compiler Collection)
     - OSS (Open Source Software)
     - 歴史ある自由なC++ほかその他たくさんの言語に対応
     - 最新の言語規格への高い追従性
-- Clang
+    - [--> Wikipedia.ja][W:GCC]
+- [Clang][Clang]
     - OSS
     - 新進気鋭のC系言語のコンパイラー
     - バックエンドは強力なLLVM(Low-Level Virtual Machine)
     - 最新の言語規格への高い追従性
-- Microsoft Visual Studio
+    - [--> Wikipedia.ja][W:Glang]
+- [Microsoft Visual Studio][MSVC++]
     - とても高機能なIDEとセット
     - Windows環境限定
+    - [--> Wikipedia.ja][W:MSVC++]
 
 OSとしてGNU/Linuxを選択したのなら、
 先ずはGCCを使ってみると良いでしょう。
@@ -125,3 +128,10 @@ MSVC++: `cl.exe source-file.cxx`
 もし、出力ファイル名をまじめに名付けてあげたい時には、
 `g++ source-file.cxx -o executable-file`
 の様に、`-o`オプションで出力ファイル名を付けてあげましょう。
+
+[GCC]: http://gcc.gnu.org/
+[Clang]: http://clang.llvm.org/
+[MSVC++]: http://www.visualstudio.com/
+[W:GCC]: http://ja.wikipedia.org/wiki/GNU%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%A9%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3
+[W:Clang]: http://ja.wikipedia.org/wiki/Clang
+[W:MSVC++]: http://ja.wikipedia.org/wiki/Microsoft_Visual_C%2B%2B
