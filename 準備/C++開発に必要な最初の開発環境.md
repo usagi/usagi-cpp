@@ -80,7 +80,7 @@ C++の開発環境を整えるならば、OSの次に、コンパイラーを選
     - 新進気鋭のC系言語のコンパイラー
     - バックエンドは強力なLLVM(Low-Level Virtual Machine)
     - 最新の言語規格への高い追従性
-    - [--> Wikipedia.ja][W:Glang]
+    - [--> Wikipedia.ja][W:Clang]
 - [Microsoft Visual Studio][MSVC++]
     - とても高機能なIDEとセット
     - Windows環境限定
