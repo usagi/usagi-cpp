@@ -36,15 +36,16 @@ make_index()
   rm $readme
   echo "# $book_title" >> $readme
   echo "- [../](../)"  >> $readme
+  echo ""              >> $readme
   echo "## $section"   >> $readme
-  global_index_buffer+="- $section\n"
+  global_index_buffer+="- [$section]($section)\n"
   for c in `find . -type f -iname '*.md' | sort`
   do
     if [ $c == ./$readme  ]; then continue; fi
     content=`echo $c | sed 's|.md$||g' | sed 's|^./||g'`
     echo "  $content"
-    echo "- [$content]($content)" >> $readme
-    global_index_buffer+="    - $content\n"
+    echo "- [$content](${content}.md)" >> $readme
+    global_index_buffer+="    - [$content](${section}/${content}.md)\n"
   done
   cd $top_dir
 }
@@ -54,8 +55,6 @@ make_global_index()
   echo [generate: $readme]
   rm $readme
   echo "# $book_title" >> $readme
-  echo "- [../](../)"  >> $readme
-  echo "## $section"   >> $readme
   echo -e $global_index_buffer >> $readme
 }
 
