@@ -1,6 +1,6 @@
 #!/bin/bash
 
-book_title='うさぎでもわかるC++'
+book_title='うさぎさんでもわかるしーぷらすぷらす'
 readme='README.md'
 
 global_index_buffer='';
